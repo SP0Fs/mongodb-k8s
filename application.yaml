@@ -8,7 +8,7 @@ spec:
   sources:
     - repoURL: 'https://github.com/SP0Fs/mongodb-k8s.git'
       targetRevision: HEAD
-      ref: resources
+      path: resources
   destination:
     server: "https://kubernetes.default.svc"
     namespace: mongodb
