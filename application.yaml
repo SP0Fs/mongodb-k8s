@@ -5,7 +5,7 @@ metadata:
   namespace: argo-cd
 spec:
   project: spof-cluster
-  sources:
+  source:
     - repoURL: 'https://github.com/SP0Fs/mongodb-k8s.git'
       targetRevision: HEAD
       path: resources
