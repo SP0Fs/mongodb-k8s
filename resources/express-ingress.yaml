@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: mongodb-express-ingress
+  name: mongo-express-ingress
   namespace: mongodb
   annotations:
     cert-manager.io/cluster-issuer: ca-issuer
@@ -25,6 +25,6 @@ spec:
             path: /
             backend:
               service:
-                name: mongodb-express-service
+                name: mongo-express
                 port:
                   number: 8081

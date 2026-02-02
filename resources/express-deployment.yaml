@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongodb-express
+  name: mongo-express
   namespace: mongodb
   labels:
-    app: mongodb-express
+    app: mongo-express
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongodb-express
+      app: mongo-express
   template:
     metadata:
       labels:
-        app: mongodb-express
+        app: mongo-express
     spec:
       containers:
-        - name: mongodb-express
+        - name: mongo-express
           image: mongo-express
           ports:
             - containerPort: 8081
