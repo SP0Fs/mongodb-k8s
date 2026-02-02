@@ -6,9 +6,9 @@ metadata:
 spec:
   project: spof-cluster
   source:
-    - repoURL: 'https://github.com/SP0Fs/mongodb-k8s.git'
-      targetRevision: HEAD
-      path: resources
+    repoURL: 'https://github.com/SP0Fs/mongodb-k8s.git'
+    targetRevision: HEAD
+    path: resources
   destination:
     server: "https://kubernetes.default.svc"
     namespace: mongodb
